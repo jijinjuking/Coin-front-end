@@ -1,0 +1,2251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>移动端页面</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 暂时注释外部字体和图标库，使用本地字体 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="header">
+        <div class="header-content">
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+            <h1 class="logo">KingAA</h1>
+            <button class="profile-btn">
+                👤
+            </button>
+        </div>
+    </header>
+
+    <!-- 侧边栏菜单 -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>菜单</h2>
+            <button class="close-btn" id="closeBtn">
+                ✕
+            </button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#home" data-section="home">🏠 首页</a></li>
+            <li><a href="#services" data-section="services">⚙️ 服务</a></li>
+            <li><a href="#portfolio" data-section="portfolio">💼 作品集</a></li>
+            <li><a href="#about" data-section="about">ℹ️ 关于</a></li>
+            <li><a href="#contact" data-section="contact">👤 个人</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 首页部分 -->
+        <section id="home" class="content-section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="coin-logo">
+                        <div class="coin-icon">
+                            👑
+                        </div>
+                        <div class="coin-sparkles">
+                            <span class="sparkle">✨</span>
+                            <span class="sparkle">💎</span>
+                            <span class="sparkle">⭐</span>
+                        </div>
+                    </div>
+                    <h2>King Coin</h2>
+                    <p class="hero-subtitle">马蹄链生态 · 新一代数字资产</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">21亿</span>
+                            <span class="stat-label">总发行量</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-value">Polygon</span>
+                            <span class="stat-label">技术底层</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="cta-btn primary">立即交易</button>
+                        <button class="cta-btn secondary">了解更多</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 币种信息 -->
+            <div class="token-info">
+                <div class="section-title">
+                    <h3>📊 实时数据</h3>
+                    <div class="live-indicator">
+                        <span class="live-dot"></span>
+                        <span class="live-text">LIVE</span>
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card price-card">
+                        <div class="card-header">
+                            <div class="info-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="card-trend up">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                        </div>
+                        <h4>当前价格</h4>
+                        <p class="price-value">$0.0245</p>
+                        <span class="price-change positive">+5.67%</span>
+                    </div>
+                    
+                    <div class="info-card supply-card">
+                        <div class="card-header">
+                            <div class="info-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="card-badge">固定</div>
+                        </div>
+                        <h4>总发行量</h4>
+                        <p class="supply-value">2,100,000,000</p>
+                        <span class="supply-label">KING 代币</span>
+                    </div>
+                    
+                    <div class="info-card pool-card">
+                        <div class="card-header">
+                            <div class="info-icon">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <div class="card-trend stable">
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <h4>流动性池</h4>
+                        <p class="pool-value">$1,256,890</p>
+                        <span class="pool-label">USDT 池子</span>
+                    </div>
+                    
+                    <div class="info-card mcap-card">
+                        <div class="card-header">
+                            <div class="info-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="card-trend up">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                        </div>
+                        <h4>市场价值</h4>
+                        <p class="mcap-value">$51,450,000</p>
+                        <span class="mcap-label">美元 USD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目介绍 -->
+            <div class="project-intro">
+                <div class="section-title">
+                    <h3>🚀 King Coin 生态</h3>
+                    <p class="section-subtitle">构建下一代去中心化金融基础设施</p>
+                </div>
+                
+                <div class="intro-showcase">
+                    <div class="showcase-main">
+                        <div class="feature-highlight">
+                            <div class="highlight-icon">
+                                <div class="icon-bg">
+                                    <i class="fab fa-ethereum"></i>
+                                </div>
+                                <div class="icon-badge">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>马蹄链技术驱动</h4>
+                                <p>King Coin 基于 Polygon 网络构建，享受极低的 Gas 费用和闪电般的交易速度。完全兼容以太坊生态，为用户提供无缝的 DeFi 体验。</p>
+                                <div class="tech-stats">
+                                    <div class="tech-stat">
+                                        <span class="stat-number">< 1秒</span>
+                                        <span class="stat-desc">交易确认</span>
+                                    </div>
+                                    <div class="tech-stat">
+                                        <span class="stat-number">$0.01</span>
+                                        <span class="stat-desc">Gas 费用</span>
+                                    </div>
+                                    <div class="tech-stat">
+                                        <span class="stat-number">99.9%</span>
+                                        <span class="stat-desc">网络稳定性</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="showcase-features">
+                        <div class="feature-card premium">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5>安全保障</h5>
+                            <p>多重安全审计，智能合约开源，资金安全得到充分保障</p>
+                            <div class="feature-badge">顶级安全</div>
+                        </div>
+                        
+                        <div class="feature-card premium">
+                            <div class="feature-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h5>社区治理</h5>
+                            <p>持币者拥有投票权，参与项目重大决策，共同推动生态发展</p>
+                            <div class="feature-badge">民主治理</div>
+                        </div>
+                        
+                        <div class="feature-card premium">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-network"></i>
+                            </div>
+                            <h5>跨链生态</h5>
+                            <p>支持多链部署，与主流 DeFi 协议深度整合，打造开放生态</p>
+                            <div class="feature-badge">跨链互操作</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 代币经济学 -->
+            <div class="tokenomics">
+                <div class="section-title">
+                    <h3>💰 代币经济学</h3>
+                    <p class="section-subtitle">透明公正的代币分配机制</p>
+                </div>
+                
+                <div class="tokenomics-container">
+                    <div class="tokenomics-chart">
+                        <div class="chart-center">
+                            <div class="total-supply">
+                                <span class="supply-number">21亿</span>
+                                <span class="supply-text">KING</span>
+                            </div>
+                        </div>
+                        <div class="chart-segments">
+                            <div class="segment mining" style="--percentage: 40"></div>
+                            <div class="segment ecosystem" style="--percentage: 25"></div>
+                            <div class="segment team" style="--percentage: 20"></div>
+                            <div class="segment marketing" style="--percentage: 15"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="tokenomics-details">
+                        <div class="tokenomics-item mining">
+                            <div class="item-header">
+                                <div class="item-icon">
+                                    <i class="fas fa-pickaxe"></i>
+                                </div>
+                                <div class="percentage">40%</div>
+                            </div>
+                            <div class="item-content">
+                                <h4>流动性挖矿</h4>
+                                <p class="amount">840,000,000 KING</p>
+                                <p class="description">奖励流动性提供者，保证市场流动性</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tokenomics-item ecosystem">
+                            <div class="item-header">
+                                <div class="item-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <div class="percentage">25%</div>
+                            </div>
+                            <div class="item-content">
+                                <h4>生态建设</h4>
+                                <p class="amount">525,000,000 KING</p>
+                                <p class="description">支持生态合作伙伴和应用开发</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tokenomics-item team">
+                            <div class="item-header">
+                                <div class="item-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="percentage">20%</div>
+                            </div>
+                            <div class="item-content">
+                                <h4>团队预留</h4>
+                                <p class="amount">420,000,000 KING</p>
+                                <p class="description">按时间表释放，保证项目持续发展</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tokenomics-item marketing">
+                            <div class="item-header">
+                                <div class="item-icon">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <div class="percentage">15%</div>
+                            </div>
+                            <div class="item-content">
+                                <h4>市场营销</h4>
+                                <p class="amount">315,000,000 KING</p>
+                                <p class="description">市场推广和社区建设投入</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 服务部分 - 重新设计为漂亮的首页 -->
+        <section id="services" class="content-section">
+            <!-- 超级英雄区域 -->
+            <div class="super-hero">
+                <div class="hero-background">
+                    <div class="floating-elements">
+                        <div class="float-coin coin-1">👑</div>
+                        <div class="float-coin coin-2">💎</div>
+                        <div class="float-coin coin-3">⭐</div>
+                        <div class="float-coin coin-4">🚀</div>
+                        <div class="float-coin coin-5">💫</div>
+                    </div>
+                </div>
+                
+                <div class="hero-premium-content">
+                    <div class="premium-badge">
+                        <span class="badge-text">🌟 PREMIUM</span>
+                        <div class="badge-glow"></div>
+                    </div>
+                    
+                    <div class="super-logo">
+                        <div class="logo-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                        <div class="center-crown">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    
+                    <h1 class="super-title">
+                        <span class="title-king">KING</span>
+                        <span class="title-coin">COIN</span>
+                    </h1>
+                    
+                    <p class="super-subtitle">马蹄链上的皇冠明珠 · 下一代数字资产王者</p>
+                    
+                    <div class="premium-stats">
+                        <div class="stat-premium">
+                            <div class="stat-icon">🔥</div>
+                            <div class="stat-info">
+                                <span class="stat-number">100K+</span>
+                                <span class="stat-label">持币地址</span>
+                            </div>
+                        </div>
+                        <div class="stat-divider-premium"></div>
+                        <div class="stat-premium">
+                            <div class="stat-icon">⚡</div>
+                            <div class="stat-info">
+                                <span class="stat-number">< 0.5s</span>
+                                <span class="stat-label">交易确认</span>
+                            </div>
+                        </div>
+                        <div class="stat-divider-premium"></div>
+                        <div class="stat-premium">
+                            <div class="stat-icon">💰</div>
+                            <div class="stat-info">
+                                <span class="stat-number">$0.005</span>
+                                <span class="stat-label">Gas费用</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="premium-actions">
+                        <button class="btn-premium primary">
+                            <span class="btn-icon">🚀</span>
+                            <span class="btn-text">立即交易</span>
+                            <div class="btn-shine"></div>
+                        </button>
+                        <button class="btn-premium secondary">
+                            <span class="btn-icon">📊</span>
+                            <span class="btn-text">查看图表</span>
+                        </button>
+                        <button class="btn-premium tertiary">
+                            <span class="btn-icon">📖</span>
+                            <span class="btn-text">白皮书</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 价格展示区域 -->
+            <div class="price-showcase">
+                <div class="price-header">
+                    <h2>💎 实时价格动态</h2>
+                    <div class="market-status">
+                        <span class="status-dot active"></span>
+                        <span class="status-text">市场开放中</span>
+                    </div>
+                </div>
+                
+                <div class="price-grid-premium">
+                    <div class="price-card-mega">
+                        <div class="card-header-mega">
+                            <div class="price-icon-mega">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="price-trend up">
+                                <i class="fas fa-trending-up"></i>
+                                <span>+12.45%</span>
+                            </div>
+                        </div>
+                        <h3>KING/USDT</h3>
+                        <div class="mega-price">
+                            <span class="price-symbol">$</span>
+                            <span class="price-main">0.0245</span>
+                            <span class="price-decimal">.00</span>
+                        </div>
+                        <div class="price-change-mega positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+$0.0027 (12.45%)</span>
+                        </div>
+                        <div class="price-stats">
+                            <div class="stat-item-small">
+                                <span class="label">24h High</span>
+                                <span class="value">$0.0256</span>
+                            </div>
+                            <div class="stat-item-small">
+                                <span class="label">24h Low</span>
+                                <span class="value">$0.0218</span>
+                            </div>
+                            <div class="stat-item-small">
+                                <span class="label">24h Volume</span>
+                                <span class="value">$2.1M</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="market-cards">
+                        <div class="market-card">
+                            <div class="card-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <h4>总供应量</h4>
+                            <p class="card-value">21亿 KING</p>
+                            <div class="card-progress">
+                                <div class="progress-bar" style="width: 45%"></div>
+                            </div>
+                            <span class="progress-text">45% 已释放</span>
+                        </div>
+                        
+                        <div class="market-card">
+                            <div class="card-icon pool">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <h4>流动性池</h4>
+                            <p class="card-value">$1.26M</p>
+                            <div class="liquidity-pairs">
+                                <span class="pair">KING/USDT</span>
+                                <span class="pair">KING/MATIC</span>
+                            </div>
+                        </div>
+                        
+                        <div class="market-card">
+                            <div class="card-icon mcap">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h4>市值排名</h4>
+                            <p class="card-value">#1,247</p>
+                            <div class="ranking-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+23 位</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 特色功能展示 -->
+            <div class="features-premium">
+                <div class="features-header">
+                    <h2>🚀 革命性特性</h2>
+                    <p>引领DeFi未来的创新技术</p>
+                </div>
+                
+                <div class="features-showcase">
+                    <div class="feature-mega">
+                        <div class="feature-visual">
+                            <div class="visual-icon">
+                                <i class="fab fa-ethereum"></i>
+                            </div>
+                            <div class="visual-effects">
+                                <div class="effect-ring"></div>
+                                <div class="effect-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>🔗 跨链互操作</h3>
+                            <p>无缝连接以太坊、BSC、Polygon等主流区块链，实现真正的跨链价值流动</p>
+                            <div class="feature-benefits">
+                                <span class="benefit">✅ 零滑点</span>
+                                <span class="benefit">✅ 秒级确认</span>
+                                <span class="benefit">✅ 低手续费</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-mega">
+                        <div class="feature-visual">
+                            <div class="visual-icon staking">
+                                <i class="fas fa-piggy-bank"></i>
+                            </div>
+                            <div class="visual-effects">
+                                <div class="effect-ring"></div>
+                                <div class="effect-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>💰 智能质押挖矿</h3>
+                            <p>创新的动态收益机制，根据市场情况自动调整收益率，最大化您的投资回报</p>
+                            <div class="feature-benefits">
+                                <span class="benefit">🔥 高达15% APY</span>
+                                <span class="benefit">📈 动态收益</span>
+                                <span class="benefit">🔒 安全保障</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-mega">
+                        <div class="feature-visual">
+                            <div class="visual-icon governance">
+                                <i class="fas fa-vote-yea"></i>
+                            </div>
+                            <div class="visual-effects">
+                                <div class="effect-ring"></div>
+                                <div class="effect-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>🏛️ DAO治理系统</h3>
+                            <p>完全去中心化的治理机制，每个持币者都是项目的主人，共同决定发展方向</p>
+                            <div class="feature-benefits">
+                                <span class="benefit">🗳️ 投票权利</span>
+                                <span class="benefit">💡 提案权</span>
+                                <span class="benefit">🎁 治理奖励</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 路线图 -->
+            <div class="roadmap-section">
+                <div class="roadmap-header">
+                    <h2>🗺️ 发展路线图</h2>
+                    <p>通往数字资产王座的征程</p>
+                </div>
+                
+                <div class="roadmap-timeline">
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Q1 2024 - 基础建设</h4>
+                            <p>✅ 智能合约部署<br>✅ 安全审计完成<br>✅ 初始流动性添加</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item active">
+                        <div class="timeline-marker">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Q2 2024 - 生态扩展</h4>
+                            <p>🔄 跨链桥开发<br>🔄 DAO治理上线<br>🔄 质押挖矿启动</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Q3 2024 - 王者登顶</h4>
+                            <p>📱 移动端App<br>🌐 全球社区建设<br>🤝 战略合作伙伴</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Q4 2024 - 生态繁荣</h4>
+                            <p>🏪 NFT市场<br>🎮 GameFi集成<br>🌍 元宇宙布局</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品集部分 - 超级精品展示 -->
+        <section id="portfolio" class="content-section">
+            <!-- 顶级展示英雄区域 -->
+            <div class="portfolio-hero">
+                <div class="hero-cosmic-bg">
+                    <div class="cosmic-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <div class="cosmic-rings">
+                        <div class="cosmic-ring ring-1"></div>
+                        <div class="cosmic-ring ring-2"></div>
+                        <div class="cosmic-ring ring-3"></div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-hero-content">
+                    <div class="elite-badge">
+                        <div class="badge-inner">
+                            <span class="badge-icon">👑</span>
+                            <span class="badge-title">KING PORTFOLIO</span>
+                            <span class="badge-subtitle">精品作品集</span>
+                        </div>
+                        <div class="badge-glow-effect"></div>
+                    </div>
+                    
+                    <h1 class="portfolio-title">
+                        <span class="title-line-1">区块链</span>
+                        <span class="title-line-2">艺术品</span>
+                        <span class="title-accent">集合</span>
+                    </h1>
+                    
+                    <p class="portfolio-subtitle">
+                        精心打造的每一个项目，都是技术与艺术的完美融合
+                    </p>
+                    
+                    <div class="portfolio-stats-showcase">
+                        <div class="stat-showcase">
+                            <div class="stat-icon-mega">📈</div>
+                            <div class="stat-data">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">成功项目</span>
+                            </div>
+                        </div>
+                        <div class="showcase-divider"></div>
+                        <div class="stat-showcase">
+                            <div class="stat-icon-mega">🎆</div>
+                            <div class="stat-data">
+                                <span class="stat-number">10M+</span>
+                                <span class="stat-label">用户体验</span>
+                            </div>
+                        </div>
+                        <div class="showcase-divider"></div>
+                        <div class="stat-showcase">
+                            <div class="stat-icon-mega">🏆</div>
+                            <div class="stat-data">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">行业奖项</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-cta-group">
+                        <button class="btn-portfolio primary">
+                            <span class="btn-icon">🚀</span>
+                            <span class="btn-label">查看作品</span>
+                            <div class="btn-trail"></div>
+                        </button>
+                        <button class="btn-portfolio secondary">
+                            <span class="btn-icon">💎</span>
+                            <span class="btn-label">合作合伙</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 精品作品展示 -->
+            <div class="masterpiece-gallery">
+                <div class="gallery-header">
+                    <h2>🎨 传世作品</h2>
+                    <p>每一件都是精心雕琢的数字艺术品</p>
+                </div>
+                
+                <div class="masterpiece-grid">
+                    <!-- 作品 1: DeFi 王国 -->
+                    <div class="masterpiece-card featured">
+                        <div class="card-aurora">
+                            <div class="aurora-effect"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="project-badge premium">
+                                <span>👑 王牌项目</span>
+                            </div>
+                            <div class="project-visual">
+                                <div class="visual-container defi">
+                                    <div class="project-icon">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="floating-symbols">
+                                        <span class="symbol symbol-1">💰</span>
+                                        <span class="symbol symbol-2">🔄</span>
+                                        <span class="symbol symbol-3">⚡</span>
+                                        <span class="symbol symbol-4">🔒</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>DeFi 王国</h3>
+                                <p>革命性的去中心化金融生态系统，集成交易、借贷、质押等全部功能</p>
+                                <div class="project-features">
+                                    <span class="feature-tag">⚡ 闪电交易</span>
+                                    <span class="feature-tag">🔒 安全多签</span>
+                                    <span class="feature-tag">💰 高收益</span>
+                                </div>
+                                <div class="project-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">$50M+</span>
+                                        <span class="metric-label">TVL</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">100K+</span>
+                                        <span class="metric-label">用户</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">99.9%</span>
+                                        <span class="metric-label">稳定性</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品 2: NFT 市场 -->
+                    <div class="masterpiece-card">
+                        <div class="card-aurora">
+                            <div class="aurora-effect nft"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="project-badge exclusive">
+                                <span>🎨 艺术品</span>
+                            </div>
+                            <div class="project-visual">
+                                <div class="visual-container nft">
+                                    <div class="project-icon">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <div class="nft-showcase">
+                                        <div class="nft-frame">🇿</div>
+                                        <div class="nft-frame">🎨</div>
+                                        <div class="nft-frame">💎</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>NFT 艺术宫殿</h3>
+                                <p>最先进的NFT交易平台，支持创作、展示、交易、拍卖等全流程</p>
+                                <div class="project-features">
+                                    <span class="feature-tag">🎨 创作工具</span>
+                                    <span class="feature-tag">💸 即时交易</span>
+                                    <span class="feature-tag">🏆 版税保障</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-indicator live">• 上线运行</span>
+                                    <span class="view-count">👁️ 50K+ 访问</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品 3: 元宇宙游戏 -->
+                    <div class="masterpiece-card">
+                        <div class="card-aurora">
+                            <div class="aurora-effect metaverse"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="project-badge innovation">
+                                <span>🚀 未来科技</span>
+                            </div>
+                            <div class="project-visual">
+                                <div class="visual-container metaverse">
+                                    <div class="project-icon">
+                                        <i class="fas fa-vr-cardboard"></i>
+                                    </div>
+                                    <div class="metaverse-elements">
+                                        <div class="planet planet-1">🌍</div>
+                                        <div class="planet planet-2">🌙</div>
+                                        <div class="planet planet-3">⭐</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>元宇宙世界</h3>
+                                <p>沉浸式的区块链游戏世界，玩家可以拥有、交易、建设虚拟资产</p>
+                                <div class="project-features">
+                                    <span class="feature-tag">🎮 VR/AR</span>
+                                    <span class="feature-tag">🏠 虚拟房产</span>
+                                    <span class="feature-tag">💎 P2E模式</span>
+                                </div>
+                                <div class="development-progress">
+                                    <div class="progress-label">开发进度</div>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar-fill" style="width: 75%"></div>
+                                    </div>
+                                    <div class="progress-text">75% 完成</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品 4: AI 交易机器人 -->
+                    <div class="masterpiece-card">
+                        <div class="card-aurora">
+                            <div class="aurora-effect ai"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="project-badge ai-badge">
+                                <span>🤖 AI 驱动</span>
+                            </div>
+                            <div class="project-visual">
+                                <div class="visual-container ai">
+                                    <div class="project-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <div class="ai-network">
+                                        <div class="neural-node node-1"></div>
+                                        <div class="neural-node node-2"></div>
+                                        <div class="neural-node node-3"></div>
+                                        <div class="neural-node node-4"></div>
+                                        <div class="neural-connection"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>AI 量化机器人</h3>
+                                <p>基于深度学习的智能交易系统，24/7自动分析市场并执行交易</p>
+                                <div class="project-features">
+                                    <span class="feature-tag">🧠 深度学习</span>
+                                    <span class="feature-tag">📈 智能分析</span>
+                                    <span class="feature-tag">⚡ 高频交易</span>
+                                </div>
+                                <div class="ai-performance">
+                                    <div class="performance-metric">
+                                        <span class="metric-icon">🏆</span>
+                                        <span class="metric-text">95% 准确率</span>
+                                    </div>
+                                    <div class="performance-metric">
+                                        <span class="metric-icon">💰</span>
+                                        <span class="metric-text">158% 年化收益</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 技术荣誉展示 -->
+            <div class="achievements-showcase">
+                <div class="achievements-header">
+                    <h2>🏆 荣誉殿堂</h2>
+                    <p>业界认可的技术成就与创新突破</p>
+                </div>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card golden">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>区块链大奖</h4>
+                        <p>2024年最佳DeFi创新项目</p>
+                        <div class="award-year">2024</div>
+                    </div>
+                    
+                    <div class="achievement-card silver">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4>技术卓越奖</h4>
+                        <p>最佳用户体验设计</p>
+                        <div class="award-year">2024</div>
+                    </div>
+                    
+                    <div class="achievement-card bronze">
+                        <div class="achievement-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>创新先锋奖</h4>
+                        <p>革命性AI交易系统</p>
+                        <div class="award-year">2023</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 首页数据仪表板 -->
+            <div class="dashboard-hero">
+                <div class="dashboard-header">
+                    <div class="user-welcome">
+                        <div class="welcome-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="welcome-info">
+                            <h2>欢迎回来，王者</h2>
+                            <p>King Coin 数字资产管理中心</p>
+                        </div>
+                    </div>
+                    <div class="dashboard-time">
+                        <div class="current-time" id="currentTime"></div>
+                        <div class="market-status">
+                            <span class="status-dot"></span>
+                            <span>市场开放</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 首页数据卡片 -->
+                <div class="data-cards-grid">
+                    <div class="data-card total-supply">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="card-trend stable">
+                                <i class="fas fa-equals"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>总发行量</h3>
+                            <div class="card-value">
+                                <span class="value-number" id="totalSupply">2,100,000,000</span>
+                                <span class="value-unit">KING</span>
+                            </div>
+                            <div class="card-description">固定发行，永不增发</div>
+                        </div>
+                    </div>
+                    
+                    <div class="data-card active-supply">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="card-progress">
+                                <div class="progress-ring">
+                                    <div class="progress-value">65%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>已激活币量</h3>
+                            <div class="card-value">
+                                <span class="value-number" id="activeSupply">1,365,000,000</span>
+                                <span class="value-unit">KING</span>
+                            </div>
+                            <div class="card-description">流通中的代币数量</div>
+                        </div>
+                    </div>
+                    
+                    <div class="data-card pending-supply">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-hourglass-half"></i>
+                            </div>
+                            <div class="card-countdown">
+                                <span class="countdown-text">待解锁</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>待激活币量</h3>
+                            <div class="card-value">
+                                <span class="value-number" id="pendingSupply">735,000,000</span>
+                                <span class="value-unit">KING</span>
+                            </div>
+                            <div class="card-description">逐步解锁中的代币</div>
+                        </div>
+                    </div>
+                    
+                    <div class="data-card current-price">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="card-trend up">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+5.67%</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>当前价格</h3>
+                            <div class="card-value price-display">
+                                <span class="currency-symbol">$</span>
+                                <span class="value-number" id="currentPrice">0.0245</span>
+                                <span class="value-unit">USDT</span>
+                            </div>
+                            <div class="price-change positive">
+                                <span>今日 +$0.0013 (+5.67%)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 市场行情模块 -->
+            <div class="market-section">
+                <div class="section-header">
+                    <h3>📊 市场行情</h3>
+                    <div class="chart-controls">
+                        <button class="time-btn active" data-period="1D">1D</button>
+                        <button class="time-btn" data-period="1W">1W</button>
+                        <button class="time-btn" data-period="1M">1M</button>
+                        <button class="time-btn" data-period="1Y">1Y</button>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-wrapper">
+                        <div class="chart-placeholder">
+                            <div class="kline-chart" id="klineChart">
+                                <!-- K线图模拟显示 -->
+                                <div class="chart-grid">
+                                    <div class="grid-line horizontal"></div>
+                                    <div class="grid-line horizontal"></div>
+                                    <div class="grid-line horizontal"></div>
+                                    <div class="grid-line vertical"></div>
+                                    <div class="grid-line vertical"></div>
+                                    <div class="grid-line vertical"></div>
+                                </div>
+                                <div class="kline-bars">
+                                    <div class="kline-bar green" style="height: 60%"></div>
+                                    <div class="kline-bar red" style="height: 45%"></div>
+                                    <div class="kline-bar green" style="height: 75%"></div>
+                                    <div class="kline-bar green" style="height: 85%"></div>
+                                    <div class="kline-bar red" style="height: 70%"></div>
+                                    <div class="kline-bar green" style="height: 90%"></div>
+                                    <div class="kline-bar green" style="height: 95%"></div>
+                                    <div class="kline-bar red" style="height: 80%"></div>
+                                    <div class="kline-bar green" style="height: 88%"></div>
+                                    <div class="kline-bar green" style="height: 92%"></div>
+                                </div>
+                                <div class="chart-tooltip" id="chartTooltip">
+                                    <div class="tooltip-content">
+                                        <div class="tooltip-time">2025-08-29 14:30</div>
+                                        <div class="tooltip-data">
+                                            <div class="data-item">
+                                                <span class="label">开盘:</span>
+                                                <span class="value">$0.0240</span>
+                                            </div>
+                                            <div class="data-item">
+                                                <span class="label">最高:</span>
+                                                <span class="value">$0.0248</span>
+                                            </div>
+                                            <div class="data-item">
+                                                <span class="label">最低:</span>
+                                                <span class="value">$0.0238</span>
+                                            </div>
+                                            <div class="data-item">
+                                                <span class="label">收盘:</span>
+                                                <span class="value">$0.0245</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="market-stats">
+                            <div class="stat-item">
+                                <div class="stat-label">24h成交量</div>
+                                <div class="stat-value">$2,156,789</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">24h最高</div>
+                                <div class="stat-value">$0.0256</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">24h最低</div>
+                                <div class="stat-value">$0.0218</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">市值</div>
+                                <div class="stat-value">$51.45M</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 个人中心 -->
+            <div class="personal-center">
+                <div class="section-header">
+                    <h3>👤 个人中心</h3>
+                    <button class="refresh-btn" id="refreshBalance">
+                        <i class="fas fa-sync-alt"></i>
+                        刷新
+                    </button>
+                </div>
+                
+                <div class="personal-info-card">
+                    <div class="balance-display">
+                        <div class="balance-header">
+                            <div class="token-logo">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="balance-info">
+                                <h4>我的 King Coin 持仓</h4>
+                                <p>实时余额显示</p>
+                            </div>
+                        </div>
+                        
+                        <div class="balance-amount">
+                            <div class="amount-display">
+                                <span class="amount-number" id="userBalance">125,860</span>
+                                <span class="amount-unit">个</span>
+                            </div>
+                            <div class="balance-value">
+                                价值: <span id="balanceValue">$3,083.57</span>
+                            </div>
+                        </div>
+                        
+                        <div class="balance-actions">
+                            <button class="action-btn primary">
+                                <i class="fas fa-arrow-up"></i>
+                                转出
+                            </button>
+                            <button class="action-btn secondary">
+                                <i class="fas fa-arrow-down"></i>
+                                收款
+                            </button>
+                            <button class="action-btn tertiary">
+                                <i class="fas fa-exchange-alt"></i>
+                                交易
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 交易记录 -->
+            <div class="transaction-history">
+                <div class="section-header">
+                    <h3>📊 交易记录</h3>
+                    <div class="filter-controls">
+                        <select class="filter-select" id="transactionFilter">
+                            <option value="all">全部交易</option>
+                            <option value="buy">买入</option>
+                            <option value="sell">卖出</option>
+                            <option value="transfer">转账</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="transaction-list">
+                    <div class="transaction-item sell">
+                        <div class="transaction-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="transaction-info">
+                            <div class="transaction-type">卖出交易</div>
+                            <div class="transaction-time">2025年8月1日 10:00</div>
+                            <div class="transaction-counterpart">对方: 0x1234...5678</div>
+                        </div>
+                        <div class="transaction-amount">
+                            <div class="amount negative">-1,000 KING</div>
+                            <div class="amount-usd">+$24.50</div>
+                        </div>
+                        <div class="transaction-status completed">已完成</div>
+                    </div>
+                    
+                    <div class="transaction-item buy">
+                        <div class="transaction-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="transaction-info">
+                            <div class="transaction-type">买入交易</div>
+                            <div class="transaction-time">2025年7月31日 15:30</div>
+                            <div class="transaction-counterpart">对方: 0x9876...3210</div>
+                        </div>
+                        <div class="transaction-amount">
+                            <div class="amount positive">+5,000 KING</div>
+                            <div class="amount-usd">-$120.00</div>
+                        </div>
+                        <div class="transaction-status completed">已完成</div>
+                    </div>
+                    
+                    <div class="transaction-item transfer">
+                        <div class="transaction-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="transaction-info">
+                            <div class="transaction-type">转账交易</div>
+                            <div class="transaction-time">2025年7月30日 09:15</div>
+                            <div class="transaction-counterpart">收款人: 王先生</div>
+                        </div>
+                        <div class="transaction-amount">
+                            <div class="amount negative">-2,500 KING</div>
+                            <div class="amount-usd">$61.25</div>
+                        </div>
+                        <div class="transaction-status completed">已完成</div>
+                    </div>
+                    
+                    <div class="transaction-item buy">
+                        <div class="transaction-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="transaction-info">
+                            <div class="transaction-type">买入交易</div>
+                            <div class="transaction-time">2025年7月29日 14:20</div>
+                            <div class="transaction-counterpart">对方: 0x5432...1098</div>
+                        </div>
+                        <div class="transaction-amount">
+                            <div class="amount positive">+10,000 KING</div>
+                            <div class="amount-usd">-$235.00</div>
+                        </div>
+                        <div class="transaction-status completed">已完成</div>
+                    </div>
+                    
+                    <div class="load-more">
+                        <button class="load-more-btn">查看更多交易记录</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 资产明细 -->
+            <div class="asset-details">
+                <div class="section-header">
+                    <h3>💰 资产明细</h3>
+                    <div class="export-controls">
+                        <button class="export-btn">
+                            <i class="fas fa-download"></i>
+                            导出记录
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="asset-tabs">
+                    <button class="tab-btn active" data-tab="inbound">转入记录</button>
+                    <button class="tab-btn" data-tab="outbound">转出记录</button>
+                    <button class="tab-btn" data-tab="all">全部记录</button>
+                </div>
+                
+                <div class="asset-records">
+                    <div class="record-item inbound">
+                        <div class="record-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <div class="record-info">
+                            <div class="record-type">代币转入</div>
+                            <div class="record-time">2025年7月31日 15:30:45</div>
+                            <div class="record-source">来源: 0x9876...3210</div>
+                            <div class="record-hash">TxID: 0xabcd...efgh</div>
+                        </div>
+                        <div class="record-amount">
+                            <div class="amount positive">+5,000 KING</div>
+                            <div class="amount-status confirmed">已确认</div>
+                        </div>
+                    </div>
+                    
+                    <div class="record-item outbound">
+                        <div class="record-icon">
+                            <i class="fas fa-minus-circle"></i>
+                        </div>
+                        <div class="record-info">
+                            <div class="record-type">代币转出</div>
+                            <div class="record-time">2025年7月30日 09:15:22</div>
+                            <div class="record-destination">目标: 王先生 (0x1234...5678)</div>
+                            <div class="record-hash">TxID: 0x1234...5678</div>
+                        </div>
+                        <div class="record-amount">
+                            <div class="amount negative">-2,500 KING</div>
+                            <div class="amount-status confirmed">已确认</div>
+                        </div>
+                    </div>
+                    
+                    <div class="record-item inbound">
+                        <div class="record-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <div class="record-info">
+                            <div class="record-type">代币转入</div>
+                            <div class="record-time">2025年7月29日 14:20:18</div>
+                            <div class="record-source">来源: 0x5432...1098</div>
+                            <div class="record-hash">TxID: 0x9876...3210</div>
+                        </div>
+                        <div class="record-amount">
+                            <div class="amount positive">+10,000 KING</div>
+                            <div class="amount-status confirmed">已确认</div>
+                        </div>
+                    </div>
+                    
+                    <div class="record-item outbound">
+                        <div class="record-icon">
+                            <i class="fas fa-minus-circle"></i>
+                        </div>
+                        <div class="record-info">
+                            <div class="record-type">代币转出</div>
+                            <div class="record-time">2025年7月28日 11:45:33</div>
+                            <div class="record-destination">目标: 李女士 (0x8765...4321)</div>
+                            <div class="record-hash">TxID: 0x5678...9012</div>
+                        </div>
+                        <div class="record-amount">
+                            <div class="amount negative">-1,500 KING</div>
+                            <div class="amount-status confirmed">已确认</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于页面 - King Coin 币种介绍 -->
+        <section id="about" class="content-section">
+            <!-- 币种介绍主体区域 -->
+            <div class="coin-main-intro">
+                <div class="crypto-grid-bg">
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line vertical"></div>
+                    <div class="grid-line vertical"></div>
+                    <div class="grid-line vertical"></div>
+                </div>
+                
+                <div class="coin-intro-content">
+                    <div class="coin-header-section">
+                        <div class="coin-logo-container">
+                            <div class="coin-3d-logo">
+                                <div class="logo-face front">👑</div>
+                                <div class="logo-face back">💎</div>
+                                <div class="logo-glow"></div>
+                            </div>
+                            <div class="logo-particles">
+                                <div class="particle p-1">✨</div>
+                                <div class="particle p-2">⭐</div>
+                                <div class="particle p-3">💫</div>
+                                <div class="particle p-4">🌟</div>
+                            </div>
+                        </div>
+                        
+                        <div class="coin-title-section">
+                            <div class="coin-name-badge">
+                                <span class="badge-prefix">KING</span>
+                                <span class="badge-suffix">COIN</span>
+                            </div>
+                            <h1 class="main-coin-title">King Coin</h1>
+                            <p class="coin-tagline">马蹄链生态 · 新一代数字资产</p>
+                            <div class="coin-network-info">
+                                <div class="network-badge">
+                                    <span class="network-icon">⚡</span>
+                                    <span class="network-name">Polygon Network</span>
+                                    <span class="network-status">🟢 在线</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="live-market-display">
+                        <div class="market-header">
+                            <h3>📊 实时行情</h3>
+                            <div class="live-pulse">
+                                <span class="pulse-dot"></span>
+                                <span class="pulse-text">LIVE</span>
+                            </div>
+                        </div>
+                        
+                        <div class="market-grid">
+                            <div class="market-card price">
+                                <div class="card-icon">💰</div>
+                                <div class="card-info">
+                                    <span class="card-label">当前价格</span>
+                                    <span class="card-value price-value">$0.0245</span>
+                                    <span class="price-trend positive">+5.67% ↗</span>
+                                </div>
+                            </div>
+                            
+                            <div class="market-card supply">
+                                <div class="card-icon">🔥</div>
+                                <div class="card-info">
+                                    <span class="card-label">总发行量</span>
+                                    <span class="card-value">21亿</span>
+                                    <span class="card-desc">固定发行</span>
+                                </div>
+                            </div>
+                            
+                            <div class="market-card volume">
+                                <div class="card-icon">📈</div>
+                                <div class="card-info">
+                                    <span class="card-label">24h成交量</span>
+                                    <span class="card-value">$2.15M</span>
+                                    <span class="card-desc">活跃交易</span>
+                                </div>
+                            </div>
+                            
+                            <div class="market-card mcap">
+                                <div class="card-icon">💎</div>
+                                <div class="card-info">
+                                    <span class="card-label">市值</span>
+                                    <span class="card-value">$51.45M</span>
+                                    <span class="card-desc">稳步增长</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <button class="action-btn primary">
+                                <span class="btn-icon">🛒</span>
+                                <span class="btn-text">立即购买</span>
+                            </button>
+                            <button class="action-btn secondary">
+                                <span class="btn-icon">📊</span>
+                                <span class="btn-text">查看图表</span>
+                            </button>
+                            <button class="action-btn tertiary">
+                                <span class="btn-icon">📱</span>
+                                <span class="btn-text">添加到钱包</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 核心特性展示 -->
+            <div class="core-features">
+                <div class="section-title">
+                    <h3>🌟 核心特性</h3>
+                    <p class="section-subtitle">打造下一代去中心化金融生态系统</p>
+                </div>
+                
+                <div class="features-showcase">
+                    <div class="feature-highlight premium">
+                        <div class="feature-visual">
+                            <div class="visual-container blockchain">
+                                <div class="blockchain-icon">
+                                    <i class="fab fa-ethereum"></i>
+                                </div>
+                                <div class="blockchain-rings">
+                                    <div class="ring ring-1"></div>
+                                    <div class="ring ring-2"></div>
+                                    <div class="ring ring-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h4>马蹄链技术基础</h4>
+                            <p>基于 Polygon 网络构建，享受极低的 Gas 费用和闪电般的交易速度。完全兼容以太坊生态，为用户提供无缝的 DeFi 体验。</p>
+                            <div class="feature-benefits">
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">⚡</span>
+                                    <span class="benefit-text">极速交易</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">💰</span>
+                                    <span class="benefit-text">低廉费用</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">🔒</span>
+                                    <span class="benefit-text">安全可靠</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card premium">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5>安全保障</h5>
+                            <p>多重安全审计，智能合约开源，资金安全得到充分保障</p>
+                            <div class="feature-badge">顶级安全</div>
+                        </div>
+                        
+                        <div class="feature-card premium">
+                            <div class="feature-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h5>社区治理</h5>
+                            <p>持币者参与项目决策，共同建设去中心化生态</p>
+                            <div class="feature-badge">DAO治理</div>
+                        </div>
+                        
+                        <div class="feature-card premium">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5>价值增长</h5>
+                            <p>通缩机制设计，随着生态发展持续创造价值</p>
+                            <div class="feature-badge">通缩模型</div>
+                        </div>
+                        
+                        <div class="feature-card premium">
+                            <div class="feature-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <h5>质押挖矿</h5>
+                            <p>参与质押挖矿，获得额外收益和治理权益</p>
+                            <div class="feature-badge">高收益</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 技术路线图 -->
+            <div class="tech-roadmap">
+                <div class="section-title">
+                    <h3>🗺️ 技术路线图</h3>
+                    <p class="section-subtitle">King Coin 生态发展蓝图</p>
+                </div>
+                
+                <div class="roadmap-timeline">
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Q1 2024 - 项目启动</h4>
+                            <p>✅ 智能合约开发<br>✅ 安全审计完成<br>✅ 代币发行上线</p>
+                            <div class="completion-badge">已完成</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item in-progress">
+                        <div class="timeline-marker">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Q2 2024 - 生态建设</h4>
+                            <p>🔄 跨链桥开发<br>🔄 DAO治理上线<br>🔄 质押挖矿启动</p>
+                            <div class="progress-badge">进行中</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item planned">
+                        <div class="timeline-marker">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Q3 2024 - 王者登顶</h4>
+                            <p>📱 移动端App<br>🌐 全球社区建设<br>🤝 战略合作伙伴</p>
+                            <div class="future-badge">规划中</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item planned">
+                        <div class="timeline-marker">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Q4 2024 - 生态繁荣</h4>
+                            <p>🏪 NFT市场<br>🎮 GameFi集成<br>🌍 元宇宙布局</p>
+                            <div class="future-badge">规划中</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 代币经济模型 -->
+            <div class="tokenomics-detailed">
+                <div class="section-title">
+                    <h3>💰 代币经济模型</h3>
+                    <p class="section-subtitle">科学的代币分配与释放机制</p>
+                </div>
+                
+                <div class="tokenomics-overview">
+                    <div class="total-supply-card">
+                        <div class="supply-header">
+                            <div class="supply-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="supply-info">
+                                <h4>总发行量</h4>
+                                <div class="supply-amount">
+                                    <span class="amount-number">2,100,000,000</span>
+                                    <span class="amount-unit">KING</span>
+                                </div>
+                                <p class="supply-note">固定发行，永不增发</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="distribution-chart">
+                        <div class="chart-container">
+                            <div class="chart-legend">
+                                <h5>代币分配比例</h5>
+                            </div>
+                            <div class="distribution-items">
+                                <div class="distribution-item">
+                                    <div class="item-visual">
+                                        <div class="progress-circle">
+                                            <div class="circle-fill" style="--percentage: 35"></div>
+                                            <div class="percentage">35%</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4>生态发展</h4>
+                                        <p class="amount">735,000,000 KING</p>
+                                        <p class="description">用于生态建设和项目发展</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="distribution-item">
+                                    <div class="item-visual">
+                                        <div class="progress-circle">
+                                            <div class="circle-fill" style="--percentage: 25"></div>
+                                            <div class="percentage">25%</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4>社区奖励</h4>
+                                        <p class="amount">525,000,000 KING</p>
+                                        <p class="description">质押挖矿和社区激励</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="distribution-item">
+                                    <div class="item-visual">
+                                        <div class="progress-circle">
+                                            <div class="circle-fill" style="--percentage: 20"></div>
+                                            <div class="percentage">20%</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4>团队锁仓</h4>
+                                        <p class="amount">420,000,000 KING</p>
+                                        <p class="description">核心团队长期锁定</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="distribution-item">
+                                    <div class="item-visual">
+                                        <div class="progress-circle">
+                                            <div class="circle-fill" style="--percentage: 10"></div>
+                                            <div class="percentage">10%</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4>市场营销</h4>
+                                        <p class="amount">210,000,000 KING</p>
+                                        <p class="description">市场推广和社区建设</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="distribution-item">
+                                    <div class="item-visual">
+                                        <div class="progress-circle">
+                                            <div class="circle-fill" style="--percentage: 10"></div>
+                                            <div class="percentage">10%</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <h4>流动性池</h4>
+                                        <p class="amount">210,000,000 KING</p>
+                                        <p class="description">DEX流动性支持和做市</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 合作伙伴生态 -->
+            <div class="partners-ecosystem">
+                <div class="section-title">
+                    <h3>🤝 合作伙伴生态</h3>
+                    <p class="section-subtitle">强大的合作伙伴网络</p>
+                </div>
+                
+                <div class="partners-showcase">
+                    <div class="partner-categories">
+                        <div class="partner-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h4>交易平台</h4>
+                            </div>
+                            <div class="partners-list">
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fab fa-bitcoin"></i>
+                                    </div>
+                                    <span>PancakeSwap</span>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </div>
+                                    <span>QuickSwap</span>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                    <span>SushiSwap</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="partner-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>安全审计</h4>
+                            </div>
+                            <div class="partners-list">
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <span>CertiK</span>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
+                                    <span>PeckShield</span>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-bug"></i>
+                                    </div>
+                                    <span>SlowMist</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="partner-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4>数据分析</h4>
+                            </div>
+                            <div class="partners-list">
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <span>CoinGecko</span>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-chart-pie"></i>
+                                    </div>
+                                    <span>DeFiPulse</span>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-analytics"></i>
+                                    </div>
+                                    <span>DappRadar</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="partner-category">
+                            <div class="category-header">
+                                <div class="category-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>技术支持</h4>
+                            </div>
+                            <div class="partners-list">
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fab fa-ethereum"></i>
+                                    </div>
+                                    <span>Polygon</span>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-cube"></i>
+                                    </div>
+                                    <span>Chainlink</span>
+                                </div>
+                                <div class="partner-item">
+                                    <div class="partner-logo">
+                                        <i class="fas fa-network-wired"></i>
+                                    </div>
+                                    <span>The Graph</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 投资与购买指南 -->
+            <div class="investment-guide">
+                <div class="section-title">
+                    <h3>💡 投资与购买指南</h3>
+                    <p class="section-subtitle">安全便捷的购买流程</p>
+                </div>
+                
+                <div class="purchase-steps">
+                    <div class="step-item">
+                        <div class="step-number">
+                            <span>1</span>
+                        </div>
+                        <div class="step-content">
+                            <h4>准备钱包</h4>
+                            <p>下载并安装 MetaMask 钱包，创建你的数字资产账户</p>
+                            <div class="step-actions">
+                                <button class="step-btn">下载钱包</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-number">
+                            <span>2</span>
+                        </div>
+                        <div class="step-content">
+                            <h4>添加网络</h4>
+                            <p>在钱包中添加 Polygon 网络，连接到马蹄链生态</p>
+                            <div class="step-actions">
+                                <button class="step-btn">网络设置</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-number">
+                            <span>3</span>
+                        </div>
+                        <div class="step-content">
+                            <h4>购买代币</h4>
+                            <p>在 PancakeSwap 等 DEX 平台使用 USDT 兑换 King Coin</p>
+                            <div class="step-actions">
+                                <button class="step-btn primary">立即购买</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-item">
+                        <div class="step-number">
+                            <span>4</span>
+                        </div>
+                        <div class="step-content">
+                            <h4>开始使用</h4>
+                            <p>参与质押挖矿、社区治理，享受 King Coin 生态收益</p>
+                            <div class="step-actions">
+                                <button class="step-btn">了解更多</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 个人页面 -->
+        <section id="contact" class="content-section">
+            <!-- 个人信息卡片 -->
+            <div class="personal-profile">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-crown"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h2>王者用户</h2>
+                        <p class="user-level">💎 VIP钻石会员</p>
+                        <div class="member-since">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>会员时间: 2024年1月</span>
+                        </div>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="edit-profile-btn">
+                            <i class="fas fa-edit"></i>
+                            编辑资料
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 持币信息 -->
+            <div class="wallet-info">
+                <div class="section-header">
+                    <h3>💳 钱包信息</h3>
+                    <div class="wallet-controls">
+                        <button class="copy-address-btn" onclick="copyAddress()">
+                            <i class="fas fa-copy"></i>
+                            复制地址
+                        </button>
+                        <button class="qr-code-btn" onclick="showQRCode()">
+                            <i class="fas fa-qrcode"></i>
+                            二维码
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="wallet-card">
+                    <div class="wallet-address-section">
+                        <div class="address-label">
+                            <i class="fas fa-wallet"></i>
+                            <span>钱包地址</span>
+                        </div>
+                        <div class="wallet-address" id="walletAddress">
+                            0x742d35Cc6634C0532925a3b8D5c3F75b8d5c4E8F
+                        </div>
+                        <div class="address-info">
+                            <span class="network-tag">Polygon Network</span>
+                            <span class="address-type">主钱包</span>
+                        </div>
+                    </div>
+                    
+                    <div class="balance-overview">
+                        <div class="total-balance">
+                            <div class="balance-label">
+                                <i class="fas fa-coins"></i>
+                                <span>持有总量</span>
+                            </div>
+                            <div class="balance-amount">
+                                <span class="amount-number" id="totalBalance">1,256,890</span>
+                                <span class="amount-unit">KING</span>
+                            </div>
+                            <div class="balance-value">
+                                ≈ <span id="totalValue">$30,792.81</span> USD
+                            </div>
+                        </div>
+                        
+                        <div class="balance-breakdown">
+                            <div class="balance-item">
+                                <span class="item-label">可用余额</span>
+                                <span class="item-value">1,156,890 KING</span>
+                                <span class="item-status available">可交易</span>
+                            </div>
+                            <div class="balance-item">
+                                <span class="item-label">锁定余额</span>
+                                <span class="item-value">100,000 KING</span>
+                                <span class="item-status locked">质押中</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 快速操作 -->
+            <div class="quick-actions">
+                <div class="action-grid">
+                    <button class="action-card withdraw" onclick="openWithdrawModal()">
+                        <div class="action-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="action-content">
+                            <h4>提现</h4>
+                            <p>转出到其他地址</p>
+                        </div>
+                        <div class="action-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </button>
+                    
+                    <button class="action-card transfer" onclick="openTransferModal()">
+                        <div class="action-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="action-content">
+                            <h4>转账</h4>
+                            <p>转给其他用户</p>
+                        </div>
+                        <div class="action-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </button>
+                    
+                    <button class="action-card receive" onclick="openReceiveModal()">
+                        <div class="action-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="action-content">
+                            <h4>收款</h4>
+                            <p>生成收款二维码</p>
+                        </div>
+                        <div class="action-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </button>
+                    
+                    <button class="action-card stake" onclick="openStakeModal()">
+                        <div class="action-icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <div class="action-content">
+                            <h4>质押</h4>
+                            <p>获得额外收益</p>
+                        </div>
+                        <div class="action-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 提现记录 -->
+            <div class="withdraw-history">
+                <div class="section-header">
+                    <h3>📤 提现记录</h3>
+                    <div class="filter-controls">
+                        <select class="filter-select" id="withdrawFilter">
+                            <option value="all">全部记录</option>
+                            <option value="pending">处理中</option>
+                            <option value="completed">已完成</option>
+                            <option value="failed">失败</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="history-list">
+                    <div class="history-item completed">
+                        <div class="item-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-type">链上提现</div>
+                            <div class="item-time">2025年8月28日 16:30</div>
+                            <div class="item-address">到地址: 0x1234...5678</div>
+                            <div class="item-hash">TxID: 0xabcd...efgh</div>
+                        </div>
+                        <div class="item-amount">
+                            <div class="amount negative">-50,000 KING</div>
+                            <div class="amount-fee">手续费: 10 KING</div>
+                        </div>
+                        <div class="item-status completed">已完成</div>
+                    </div>
+                    
+                    <div class="history-item pending">
+                        <div class="item-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-type">链上提现</div>
+                            <div class="item-time">2025年8月28日 10:15</div>
+                            <div class="item-address">到地址: 0x9876...3210</div>
+                            <div class="item-hash">处理中...</div>
+                        </div>
+                        <div class="item-amount">
+                            <div class="amount negative">-25,000 KING</div>
+                            <div class="amount-fee">手续费: 10 KING</div>
+                        </div>
+                        <div class="item-status pending">处理中</div>
+                    </div>
+                    
+                    <div class="history-item completed">
+                        <div class="item-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-type">链上提现</div>
+                            <div class="item-time">2025年8月27日 14:22</div>
+                            <div class="item-address">到地址: 0x5432...1098</div>
+                            <div class="item-hash">TxID: 0x5678...9012</div>
+                        </div>
+                        <div class="item-amount">
+                            <div class="amount negative">-100,000 KING</div>
+                            <div class="amount-fee">手续费: 10 KING</div>
+                        </div>
+                        <div class="item-status completed">已完成</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 转账记录 -->
+            <div class="transfer-history">
+                <div class="section-header">
+                    <h3>💸 转账记录</h3>
+                    <div class="filter-controls">
+                        <select class="filter-select" id="transferFilter">
+                            <option value="all">全部记录</option>
+                            <option value="sent">转出</option>
+                            <option value="received">收到</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="history-list">
+                    <div class="history-item transfer-sent">
+                        <div class="item-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-type">转账给用户</div>
+                            <div class="item-time">2025年8月28日 09:45</div>
+                            <div class="item-target">收款人: 李先生</div>
+                            <div class="item-note">备注: 合作项目分成</div>
+                        </div>
+                        <div class="item-amount">
+                            <div class="amount negative">-15,000 KING</div>
+                            <div class="amount-fee">手续费: 5 KING</div>
+                        </div>
+                        <div class="item-status completed">已完成</div>
+                    </div>
+                    
+                    <div class="history-item transfer-received">
+                        <div class="item-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-type">收到转账</div>
+                            <div class="item-time">2025年8月27日 18:30</div>
+                            <div class="item-target">发送人: 王女士</div>
+                            <div class="item-note">备注: 投资回报</div>
+                        </div>
+                        <div class="item-amount">
+                            <div class="amount positive">+30,000 KING</div>
+                            <div class="amount-fee">免手续费</div>
+                        </div>
+                        <div class="item-status completed">已完成</div>
+                    </div>
+                    
+                    <div class="history-item transfer-sent">
+                        <div class="item-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-type">转账给用户</div>
+                            <div class="item-time">2025年8月26日 11:20</div>
+                            <div class="item-target">收款人: 张总</div>
+                            <div class="item-note">备注: 设备采购款</div>
+                        </div>
+                        <div class="item-amount">
+                            <div class="amount negative">-80,000 KING</div>
+                            <div class="amount-fee">手续费: 5 KING</div>
+                        </div>
+                        <div class="item-status completed">已完成</div>
+                    </div>
+                    
+                    <div class="history-item transfer-received">
+                        <div class="item-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-type">收到转账</div>
+                            <div class="item-time">2025年8月25日 15:10</div>
+                            <div class="item-target">发送人: 赵经理</div>
+                            <div class="item-note">备注: 服务费用</div>
+                        </div>
+                        <div class="item-amount">
+                            <div class="amount positive">+45,000 KING</div>
+                            <div class="amount-fee">免手续费</div>
+                        </div>
+                        <div class="item-status completed">已完成</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 操作模态框 -->
+            <div id="withdrawModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>💸 提现</h3>
+                        <button class="close-modal" onclick="closeModal('withdrawModal')">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <form class="withdraw-form">
+                        <div class="form-group">
+                            <label>提现地址</label>
+                            <input type="text" placeholder="请输入接收地址" required>
+                        </div>
+                        <div class="form-group">
+                            <label>提现数量</label>
+                            <div class="amount-input">
+                                <input type="number" placeholder="0.00" required>
+                                <span class="unit">KING</span>
+                            </div>
+                            <div class="balance-info">可用余额: 1,156,890 KING</div>
+                        </div>
+                        <div class="form-group">
+                            <label>网络费用</label>
+                            <div class="fee-info">
+                                <span>预计手续费: 10 KING</span>
+                                <span class="fee-usd">(≈ $0.25)</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            确认提现
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="transferModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>🔄 转账</h3>
+                        <button class="close-modal" onclick="closeModal('transferModal')">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <form class="transfer-form">
+                        <div class="form-group">
+                            <label>收款人</label>
+                            <input type="text" placeholder="请输入用户名或手机号" required>
+                        </div>
+                        <div class="form-group">
+                            <label>转账数量</label>
+                            <div class="amount-input">
+                                <input type="number" placeholder="0.00" required>
+                                <span class="unit">KING</span>
+                            </div>
+                            <div class="balance-info">可用余额: 1,156,890 KING</div>
+                        </div>
+                        <div class="form-group">
+                            <label>备注信息</label>
+                            <input type="text" placeholder="请输入备注（可选）">
+                        </div>
+                        <div class="form-group">
+                            <label>手续费</label>
+                            <div class="fee-info">
+                                <span>转账手续费: 5 KING</span>
+                                <span class="fee-usd">(≈ $0.12)</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-send"></i>
+                            确认转账
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部导航 -->
+    <nav class="bottom-nav">
+        <a href="#home" class="nav-item active" data-section="home">
+            <i class="fas fa-home"></i>
+            <span>首页</span>
+        </a>
+        <a href="#services" class="nav-item" data-section="services">
+            <i class="fas fa-cogs"></i>
+            <span>服务</span>
+        </a>
+        <a href="#portfolio" class="nav-item" data-section="portfolio">
+            <i class="fas fa-briefcase"></i>
+            <span>作品</span>
+        </a>
+        <a href="#about" class="nav-item" data-section="about">
+            <i class="fas fa-info-circle"></i>
+            <span>关于</span>
+        </a>
+        <a href="#contact" class="nav-item" data-section="contact">
+            <i class="fas fa-user"></i>
+            <span>个人</span>
+        </a>
+    </nav>
+
+    <!-- 遮罩层 -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
